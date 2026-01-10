@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VETH SamOeun | Enterprise Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VETH SamOeun</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+                <div class="hero-name">
+                    <h2 class="name-intro">Hi, I'm</h2>
+                    <h1 class="name-main">VETH SamOeun</h1>
+                </div>
+                <h1 class="hero-title">
+                    Building Scalable
+                    <span class="gradient-text">Enterprise Solutions</span>
+                    with Java & Spring Boot
+                </h1>
+                <p class="hero-subtitle">
+                    Enterprise Backend Developer specializing in robust server-side architectures, 
+                    multi-database systems, and secure authentication mechanisms. 
+                    Turning complex business requirements into elegant, high-performance applications.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="20">0</div>
+                        <div class="stat-label">Technologies Mastered</div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">SpringBootApplication.java</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">@SpringBootApplication</span></div>
+                        <div class="code-line"><span class="keyword">public class</span> <span class="class">AdminDashboard</span> {</div>
+                        <div class="code-line indent"><span class="keyword">public static void</span> <span class="method">main</span>(<span class="type">String</span>[] args) {</div>
+                        <div class="code-line double-indent"><span class="class">SpringApplication</span>.<span class="method">run</span>(<span class="class">AdminDashboard</span>.<span class="keyword">class</span>, args);</div>
+                        <div class="code-line indent">}</div>
+                        <div class="code-line">}</div>
+                        <div class="code-cursor">|</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a passionate enterprise backend developer with extensive experience in building 
+                        scalable, secure, and high-performance web applications. My expertise lies in Java 
+                        ecosystems, particularly Spring Boot, where I craft robust server-side solutions 
+                        that power mission-critical business operations.
+                    </p>
+                    <p class="about-text">
+                        What drives me is the challenge of architecting systems that not only meet today's 
+                        requirements but are designed to scale and evolve. From implementing complex 
+                        authentication systems to optimizing database interactions across multiple platforms, 
+                        I bring a detail-oriented approach to every project.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🏗️</div>
+                            <h4>Architecture Design</h4>
+                            <p>Scalable MVC patterns with clean separation of concerns</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🔐</div>
+                            <h4>Security Expert</h4>
+                            <p>OAuth2, JWT, and custom encryption strategies</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">👨‍🏫</div>
+                            <h4>Team Leadership</h4>
+                            <p>Mentoring developers and sharing best practices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">👨‍💻</span>
+                            <p>Developer Profile</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span>Java Expert</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span>Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="experience-container">
+                <div class="experience-card featured">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <span>🚀</span>
+                        </div>
+                        <div class="card-meta">
+                            <h3>Enterprise Backend Developer</h3>
+                            <p class="company">Admin Dashboard System · Full-time</p>
+                            <span class="duration">Recent Project</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-description">
+                            Architected and developed a comprehensive admin dashboard system serving as the 
+                            backbone for enterprise-level operations. Led the implementation of secure 
+                            authentication, multi-database support, and real-time analytics.
+                        </p>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <span class="achievement-icon">✓</span>
+                                <div>
+                                    <h4>Multi-Database Architecture</h4>
+                                    <p>Built support for PostgreSQL, MySQL, MariaDB, and Oracle with seamless switching capabilities</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">✓</span>
+                                <div>
+                                    <h4>OAuth2 & JWT Security</h4>
+                                    <p>Implemented robust authentication system with Spring Security OAuth2 and JWT tokens</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">✓</span>
+                                <div>
+                                    <h4>Elasticsearch Integration</h4>
+                                    <p>Integrated Elasticsearch for transaction logging and real-time analytics dashboard</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">✓</span>
+                                <div>
+                                    <h4>RESTful API Development</h4>
+                                    <p>Created comprehensive REST APIs with Swagger documentation for seamless integration</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-icon">✓</span>
+                                <div>
+                                    <h4>Team Mentorship</h4>
+                                    <p>Trained interns and junior developers on Spring Boot best practices and patterns</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Spring Boot 2.6</span>
+                            <span class="tech-tag">Spring Security</span>
+                            <span class="tech-tag">OAuth2/JWT</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Oracle</span>
+                            <span class="tech-tag">Elasticsearch</span>
+                            <span class="tech-tag">Swagger</span>
+                            <span class="tech-tag">Gradle</span>
+                            <span class="tech-tag">Spring Cloud Config</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Backend Developer</h3>
+                            <p class="timeline-company">Enterprise Solutions</p>
+                            <ul class="timeline-tasks">
+                                <li>Developed enterprise web applications with Java, JSP, and JavaScript</li>
+                                <li>Implemented scalable MVC architecture with Repository and Service Layer patterns</li>
+                                <li>Built custom encryption strategies and data masking features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>Software Developer</h3>
+                            <p class="timeline-company">Full-Stack Development</p>
+                            <ul class="timeline-tasks">
+                                <li>Full-stack development with focus on backend optimization</li>
+                                <li>Frontend integration with JSP, JavaScript, and jQuery</li>
+                                <li>Performance tuning and database optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card large">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details →</a>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Enterprise Application</div>
+                        <h3>Admin Dashboard System</h3>
+                        <p>
+                            A comprehensive enterprise admin dashboard with OAuth2 authentication, 
+                            multi-database support, and real-time analytics. Features include 
+                            transaction logging, IP management, and custom audit systems.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature">OAuth2 Authentication</span>
+                            <span class="feature">Multi-Database Support</span>
+                            <span class="feature">Elasticsearch Analytics</span>
+                            <span class="feature">RESTful APIs</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                            <span>Elasticsearch</span>
+                            <span>Swagger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <div class="project-content">
+                        <div class="project-category">API Development</div>
+                        <h3>RESTful API Suite</h3>
+                        <p>
+                            Comprehensive REST APIs with Swagger documentation, 
+                            supporting multiple authentication methods and data formats.
+                        </p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>Swagger</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔍</div>
+                    <div class="project-content">
+                        <div class="project-category">Analytics Platform</div>
+                        <h3>Transaction Analytics</h3>
+                        <p>
+                            Real-time transaction logging and analytics system 
+                            powered by Elasticsearch for deep insights.
+                        </p>
+                        <div class="project-tech">
+                            <span>Elasticsearch</span>
+                            <span>Spring Boot</span>
+                            <span>Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔐</div>
+                    <div class="project-content">
+                        <div class="project-category">Security System</div>
+                        <h3>Authentication Framework</h3>
+                        <p>
+                            Robust OAuth2 and JWT-based authentication system 
+                            with custom encryption and security features.
+                        </p>
+                        <div class="project-tech">
+                            <span>Spring Security</span>
+                            <span>OAuth2</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Java 8</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Spring Boot</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Spring Security</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Spring Data JPA</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Hibernate</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Databases & Storage</h3>
+                    <div class="skill-cloud">
+                        <span class="cloud-tag large">PostgreSQL</span>
+                        <span class="cloud-tag large">MySQL</span>
+                        <span class="cloud-tag medium">Oracle</span>
+                        <span class="cloud-tag medium">MariaDB</span>
+                        <span class="cloud-tag small">H2 Database</span>
+                        <span class="cloud-tag small">Tibero</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Security & Authentication</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">OAuth2</div>
+                        <div class="skill-badge">JWT</div>
+                        <div class="skill-badge">Spring Security</div>
+                        <div class="skill-badge">Jasypt</div>
+                        <div class="skill-badge">BCrypt</div>
+                        <div class="skill-badge">Custom Encryption</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">APIs & Integration</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">RESTful APIs</div>
+                        <div class="skill-badge">Swagger/OpenAPI</div>
+                        <div class="skill-badge">Elasticsearch</div>
+                        <div class="skill-badge">Apache HttpClient</div>
+                        <div class="skill-badge">Jackson</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend & UI</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">JSP/JSTL</div>
+                        <div class="skill-badge">JavaScript</div>
+                        <div class="skill-badge">jQuery</div>
+                        <div class="skill-badge">Chart.js</div>
+                        <div class="skill-badge">CSS/LESS</div>
+                        <div class="skill-badge">Responsive Design</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & DevOps</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">Gradle</div>
+                        <div class="skill-badge">Git/GitLab</div>
+                        <div class="skill-badge">IntelliJ IDEA</div>
+                        <div class="skill-badge">Spring Cloud Config</div>
+                        <div class="skill-badge">TestNG</div>
+                        <div class="skill-badge">REST Assured</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</h3>
+                    <p>
+                        Whether you're looking for an experienced backend developer to join your team 
+                        or need consultation on enterprise architecture, let's start a conversation.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>Available upon request</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">💼</div>
+                            <div>
+                                <h4>Availability</h4>
+                                <p>Open to new opportunities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 VETH SamOeun. Crafted with passion for enterprise solutions.</p>
+                <p class="footer-tagline">Building scalable backend systems, one line of code at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
