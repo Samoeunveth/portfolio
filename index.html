@@ -22,6 +22,7 @@
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -46,36 +47,36 @@
                     <span>Available for opportunities</span>
                 </div>
                 <div class="hero-name">
-                    <h2 class="name-intro">Hi, I'm</h2>
+                    <h2 class="name-intro">Hello, I am</h2>
                     <h1 class="name-main">VETH SamOeun</h1>
                 </div>
                 <h1 class="hero-title">
-                    Building Scalable
-                    <span class="gradient-text">Enterprise Solutions</span>
-                    with JEXFramework(Java) & Spring Boot
+                    Back-End Developer
+                    <span class="gradient-text">6+ Years Experience</span>
+                    Specialized in JEXFramework, Spring Boot & .NET
                 </h1>
                 <p class="hero-subtitle">
-                    Enterprise Backend Developer specializing in robust server-side architectures, 
-                    multi-database systems, and secure authentication mechanisms. 
-                    Turning complex business requirements into elegant, high-performance applications.
+                    Backend Developer with extensive experience in building and maintaining scalable server-side applications. 
+                    Specialized in integrating real-time data through web scraping and designing robust data pipelines. 
+                    Expert in JEXFramework, Spring Framework, .NET Core, and enterprise architecture.
                 </p>
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-number" data-target="6">0</div>
                         <div class="stat-label">Years Experience</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-number" data-target="20">0</div>
                         <div class="stat-label">Projects Delivered</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="20">0</div>
-                        <div class="stat-label">Technologies Mastered</div>
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Technologies</div>
                     </div>
                 </div>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -86,13 +87,16 @@
                             <span class="dot yellow"></span>
                             <span class="dot green"></span>
                         </div>
-                        <span class="window-title">SpringBootApplication.java</span>
+                        <span class="window-title">BackendService.java</span>
                     </div>
                     <div class="code-content">
-                        <div class="code-line"><span class="keyword">@SpringBootApplication</span></div>
-                        <div class="code-line"><span class="keyword">public class</span> <span class="class">AdminDashboard</span> {</div>
-                        <div class="code-line indent"><span class="keyword">public static void</span> <span class="method">main</span>(<span class="type">String</span>[] args) {</div>
-                        <div class="code-line double-indent"><span class="class">SpringApplication</span>.<span class="method">run</span>(<span class="class">AdminDashboard</span>.<span class="keyword">class</span>, args);</div>
+                        <div class="code-line"><span class="keyword">@RestController</span></div>
+                        <div class="code-line"><span class="keyword">public class</span> <span class="class">BackendService</span> {</div>
+                        <div class="code-line indent"><span class="keyword">@Autowired</span></div>
+                        <div class="code-line indent"><span class="keyword">private</span> <span class="class">UserService</span> userService;</div>
+                        <div class="code-line indent"><span class="keyword">@GetMapping</span>(<span class="type">"/api/users"</span>)</div>
+                        <div class="code-line indent"><span class="keyword">public</span> <span class="type">ResponseEntity</span>&lt;<span class="type">List</span>&lt;<span class="class">User</span>&gt;&gt; <span class="method">getUsers</span>() {</div>
+                        <div class="code-line double-indent"><span class="keyword">return</span> <span class="class">ResponseEntity</span>.<span class="method">ok</span>(userService.<span class="method">findAll</span>());</div>
                         <div class="code-line indent">}</div>
                         <div class="code-line">}</div>
                         <div class="code-cursor">|</div>
@@ -118,32 +122,31 @@
             <div class="about-grid">
                 <div class="about-content">
                     <p class="about-text">
-                        I'm a passionate enterprise backend developer with extensive experience in building 
-                        scalable, secure, and high-performance web applications. My expertise lies in Java 
-                        ecosystems, particularly Spring Boot, where I craft robust server-side solutions 
-                        that power mission-critical business operations.
+                        I'm a passionate Back-End Developer with 6+ years of experience in building and maintaining 
+                        scalable server-side applications. My expertise spans Java ecosystems (JEXFramework, Spring Boot), 
+                        .NET Core, and Node.js, where I develop robust solutions that power mission-critical business operations.
                     </p>
                     <p class="about-text">
-                        What drives me is the challenge of architecting systems that not only meet today's 
-                        requirements but are designed to scale and evolve. From implementing complex 
-                        authentication systems to optimizing database interactions across multiple platforms, 
-                        I bring a detail-oriented approach to every project.
+                        Specialized in integrating real-time data through web scraping to deliver accurate, up-to-date analytics. 
+                        I possess extensive hands-on experience in designing and maintaining robust data scraping pipelines. 
+                        From implementing OAuth2 and JWT security to architecting multi-database systems, I bring a detail-oriented 
+                        approach to every project, ensuring both performance and scalability.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-card">
                             <div class="highlight-icon">🏗️</div>
-                            <h4>Architecture Design</h4>
-                            <p>Scalable MVC patterns with clean separation of concerns</p>
+                            <h4>Enterprise Architecture</h4>
+                            <p>Multi-database systems, OData v4 + REST APIs, and scalable solutions</p>
                         </div>
                         <div class="highlight-card">
                             <div class="highlight-icon">🔐</div>
                             <h4>Security Expert</h4>
-                            <p>OAuth2, JWT, and custom encryption strategies</p>
+                            <p>OAuth2, JWT implementation, and secure authentication mechanisms</p>
                         </div>
                         <div class="highlight-card">
-                            <div class="highlight-icon">👨‍🏫</div>
-                            <h4>Team Leadership</h4>
-                            <p>Mentoring developers and sharing best practices</p>
+                            <div class="highlight-icon">🕷️</div>
+                            <h4>Data Scraping</h4>
+                            <p>Robust scraping services using JavaScript, Pascal, and Java</p>
                         </div>
                     </div>
                 </div>
@@ -155,13 +158,13 @@
                         </div>
                     </div>
                     <div class="floating-badge badge-1">
-                        <span>Spring Boot</span>
+                        <span>JEXFramework</span>
                     </div>
                     <div class="floating-badge badge-2">
-                        <span>Java Expert</span>
+                        <span>Spring Boot</span>
                     </div>
                     <div class="floating-badge badge-3">
-                        <span>Architecture</span>
+                        <span>.NET Core</span>
                     </div>
                 </div>
             </div>
@@ -182,91 +185,99 @@
                             <span>🚀</span>
                         </div>
                         <div class="card-meta">
-                            <h3>Enterprise Backend Developer</h3>
-                            <p class="company">Admin Dashboard System · Full-time</p>
-                            <span class="duration">Recent Project</span>
+                            <h3>Backend Developer</h3>
+                            <p class="company">KOSIGN, Phnom Penh · Dec 2023 - Present</p>
+                            <span class="duration">Current Position</span>
                         </div>
                     </div>
                     <div class="card-body">
                         <p class="card-description">
-                            Architected and developed a comprehensive admin dashboard system serving as the 
-                            backbone for enterprise-level operations. Led the implementation of secure 
-                            authentication, multi-database support, and real-time analytics.
+                            Developed and maintained enterprise applications using JEXFramework and Spring Framework 
+                            (Java, Spring Data JPA, PostgreSQL, MySQL, OAuth2, JWT, JSP, JavaScript). Focus on creating 
+                            efficient, scalable, and high-performance web applications with enterprise admin dashboard 
+                            featuring multi-database support.
                         </p>
                         <div class="achievements">
                             <div class="achievement-item">
                                 <span class="achievement-icon">✓</span>
                                 <div>
-                                    <h4>Multi-Database Architecture</h4>
-                                    <p>Built support for PostgreSQL, MySQL, MariaDB, and Oracle with seamless switching capabilities</p>
+                                    <h4>Enterprise Admin Dashboard</h4>
+                                    <p>Built enterprise admin dashboard with multi-database support for seamless data management</p>
                                 </div>
                             </div>
                             <div class="achievement-item">
                                 <span class="achievement-icon">✓</span>
                                 <div>
                                     <h4>OAuth2 & JWT Security</h4>
-                                    <p>Implemented robust authentication system with Spring Security OAuth2 and JWT tokens</p>
+                                    <p>Implemented OAuth2 authentication and JWT security for robust access control</p>
                                 </div>
                             </div>
                             <div class="achievement-item">
                                 <span class="achievement-icon">✓</span>
                                 <div>
-                                    <h4>Elasticsearch Integration</h4>
-                                    <p>Integrated Elasticsearch for transaction logging and real-time analytics dashboard</p>
-                                </div>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">✓</span>
-                                <div>
-                                    <h4>RESTful API Development</h4>
-                                    <p>Created comprehensive REST APIs with Swagger documentation for seamless integration</p>
+                                    <h4>RESTful APIs with Swagger</h4>
+                                    <p>Developed comprehensive RESTful APIs with Swagger documentation for seamless integration</p>
                                 </div>
                             </div>
                             <div class="achievement-item">
                                 <span class="achievement-icon">✓</span>
                                 <div>
                                     <h4>Team Mentorship</h4>
-                                    <p>Trained interns and junior developers on Spring Boot best practices and patterns</p>
+                                    <p>Trained and mentored new interns and junior developers on JEXFramework best practices</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tech-stack">
-                            <span class="tech-tag">Spring Boot 2.6</span>
-                            <span class="tech-tag">Spring Security</span>
+                            <span class="tech-tag">JEXFramework</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Spring Data JPA</span>
                             <span class="tech-tag">OAuth2/JWT</span>
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Oracle</span>
-                            <span class="tech-tag">Elasticsearch</span>
+                            <span class="tech-tag">JSP</span>
+                            <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">Swagger</span>
-                            <span class="tech-tag">Gradle</span>
-                            <span class="tech-tag">Spring Cloud Config</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="experience-timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">2022 - Present</div>
+                        <div class="timeline-date">2021 - Present</div>
                         <div class="timeline-content">
                             <h3>Backend Developer</h3>
-                            <p class="timeline-company">Enterprise Solutions</p>
+                            <p class="timeline-company">ACETOZ Company, ERP & Internal System</p>
                             <ul class="timeline-tasks">
-                                <li>Developed enterprise web applications with Java, JSP, and JavaScript</li>
-                                <li>Implemented scalable MVC architecture with Repository and Service Layer patterns</li>
-                                <li>Built custom encryption strategies and data masking features</li>
+                                <li>Built and maintained systems using .NET CORE, Entity Framework, JWT, and Middleware</li>
+                                <li>Managed data with SQL Server and containerized applications using Docker</li>
+                                <li>Developed APIs for seamless system communication and secure data handling</li>
+                                <li>Worked closely with Project Manager to meet deadlines and deliver quality results</li>
                             </ul>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-date">2019 - 2022</div>
+                        <div class="timeline-date">Sep 2019 - Dec 2022</div>
                         <div class="timeline-content">
-                            <h3>Software Developer</h3>
-                            <p class="timeline-company">Full-Stack Development</p>
+                            <h3>Data Scraping Specialist</h3>
+                            <p class="timeline-company">KOSIGN, Phnom Penh</p>
                             <ul class="timeline-tasks">
-                                <li>Full-stack development with focus on backend optimization</li>
-                                <li>Frontend integration with JSP, JavaScript, and jQuery</li>
-                                <li>Performance tuning and database optimization</li>
+                                <li>Developed and maintained robust scraping services using JavaScript, Pascal, and Java</li>
+                                <li>Extracted and processed public data from Korean Bank and car insurance websites</li>
+                                <li>Performed data analysis, deduplication, and validated records insertion</li>
+                                <li>Trained and mentored interns and junior developers in data scraping best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-content">
+                            <h3>Developer</h3>
+                            <p class="timeline-company">Cambolink21 Express (Outsourcing)</p>
+                            <ul class="timeline-tasks">
+                                <li>Created and maintained real-time features using Node.js and MongoDB</li>
+                                <li>Architected enterprise-grade logistics management system with TypeScript, Node.js, Angular</li>
+                                <li>Implemented dual-API architecture (OData v4 + REST) for parcel tracking and warehouse management</li>
+                                <li>Designed parcel lifecycle management system with 5 movement types</li>
                             </ul>
                         </div>
                     </div>
@@ -292,73 +303,84 @@
                     </div>
                     <div class="project-content">
                         <div class="project-category">Enterprise Application</div>
-                        <h3>Admin Dashboard System</h3>
+                        <h3>Enterprise Admin Dashboard</h3>
                         <p>
-                            A comprehensive enterprise admin dashboard with OAuth2 authentication, 
-                            multi-database support, and real-time analytics. Features include 
-                            transaction logging, IP management, and custom audit systems.
+                            A comprehensive enterprise admin dashboard with multi-database support, 
+                            OAuth2 authentication, and JWT security implementation. Features RESTful APIs 
+                            with Swagger documentation for seamless integration and system communication.
                         </p>
                         <div class="project-features">
-                            <span class="feature">OAuth2 Authentication</span>
                             <span class="feature">Multi-Database Support</span>
-                            <span class="feature">Elasticsearch Analytics</span>
+                            <span class="feature">OAuth2 Authentication</span>
+                            <span class="feature">JWT Security</span>
                             <span class="feature">RESTful APIs</span>
+                            <span class="feature">Swagger Documentation</span>
                         </div>
                         <div class="project-tech">
+                            <span>JEXFramework</span>
                             <span>Spring Boot</span>
                             <span>PostgreSQL</span>
-                            <span>Elasticsearch</span>
-                            <span>Swagger</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">📊</div>
-                    <div class="project-content">
-                        <div class="project-category">API Development</div>
-                        <h3>RESTful API Suite</h3>
-                        <p>
-                            Comprehensive REST APIs with Swagger documentation, 
-                            supporting multiple authentication methods and data formats.
-                        </p>
-                        <div class="project-tech">
-                            <span>Spring Boot</span>
-                            <span>Swagger</span>
+                            <span>MySQL</span>
+                            <span>OAuth2</span>
                             <span>JWT</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-icon">🔍</div>
+                    <div class="project-icon">🚚</div>
                     <div class="project-content">
-                        <div class="project-category">Analytics Platform</div>
-                        <h3>Transaction Analytics</h3>
+                        <div class="project-category">Logistics System</div>
+                        <h3>Logistic & Inventory Management</h3>
                         <p>
-                            Real-time transaction logging and analytics system 
-                            powered by Elasticsearch for deep insights.
+                            Enterprise-grade logistics management system with dual-API architecture 
+                            (OData v4 + REST), parcel lifecycle management with 5 movement types, 
+                            and comprehensive warehouse management.
                         </p>
                         <div class="project-tech">
-                            <span>Elasticsearch</span>
-                            <span>Spring Boot</span>
-                            <span>Chart.js</span>
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>Angular</span>
+                            <span>MongoDB</span>
+                            <span>OData v4</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-icon">🔐</div>
+                    <div class="project-icon">🕷️</div>
                     <div class="project-content">
-                        <div class="project-category">Security System</div>
-                        <h3>Authentication Framework</h3>
+                        <div class="project-category">Data Scraping</div>
+                        <h3>Web Scraping Services</h3>
                         <p>
-                            Robust OAuth2 and JWT-based authentication system 
-                            with custom encryption and security features.
+                            Robust scraping services using JavaScript, Pascal, and Java. 
+                            Extracted and processed data from Korean Bank and car insurance websites 
+                            with data analysis and deduplication.
                         </p>
                         <div class="project-tech">
-                            <span>Spring Security</span>
-                            <span>OAuth2</span>
+                            <span>JavaScript</span>
+                            <span>Pascal</span>
+                            <span>Java</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">💼</div>
+                    <div class="project-content">
+                        <div class="project-category">ERP System</div>
+                        <h3>ERP & Internal System</h3>
+                        <p>
+                            Built and maintained ERP systems using .NET Core, Entity Framework, 
+                            and Docker containerization. Developed secure APIs with JWT authentication 
+                            and middleware for system communication.
+                        </p>
+                        <div class="project-tech">
+                            <span>.NET Core</span>
+                            <span>Entity Framework</span>
+                            <span>SQL Server</span>
+                            <span>Docker</span>
                             <span>JWT</span>
                         </div>
                     </div>
@@ -380,7 +402,16 @@
                     <div class="skill-items">
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Java 8</span>
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JEXFramework</span>
                                 <span class="skill-level">Expert</span>
                             </div>
                             <div class="skill-bar">
@@ -398,7 +429,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Spring Security</span>
+                                <span class="skill-name">.NET Core</span>
                                 <span class="skill-level">Advanced</span>
                             </div>
                             <div class="skill-bar">
@@ -407,7 +438,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Spring Data JPA</span>
+                                <span class="skill-name">Node.js</span>
                                 <span class="skill-level">Advanced</span>
                             </div>
                             <div class="skill-bar">
@@ -416,8 +447,8 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-header">
-                                <span class="skill-name">Hibernate</span>
-                                <span class="skill-level">Advanced</span>
+                                <span class="skill-name">C#</span>
+                                <span class="skill-level">Intermediate</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85"></div>
@@ -431,10 +462,10 @@
                     <div class="skill-cloud">
                         <span class="cloud-tag large">PostgreSQL</span>
                         <span class="cloud-tag large">MySQL</span>
+                        <span class="cloud-tag large">MongoDB</span>
                         <span class="cloud-tag medium">Oracle</span>
-                        <span class="cloud-tag medium">MariaDB</span>
-                        <span class="cloud-tag small">H2 Database</span>
-                        <span class="cloud-tag small">Tibero</span>
+                        <span class="cloud-tag medium">Microsoft SQL Server</span>
+                        <span class="cloud-tag small">Prisma ORM</span>
                     </div>
                 </div>
 
@@ -451,37 +482,99 @@
                 </div>
 
                 <div class="skill-category">
+                    <h3 class="category-title">Frameworks</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">JEXFramework</div>
+                        <div class="skill-badge">Spring Framework</div>
+                        <div class="skill-badge">Struts Framework</div>
+                        <div class="skill-badge">.NET Framework</div>
+                        <div class="skill-badge">Entity Framework</div>
+                        <div class="skill-badge">Next.js</div>
+                        <div class="skill-badge">Angular</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
                     <h3 class="category-title">APIs & Integration</h3>
                     <div class="skill-grid">
                         <div class="skill-badge">RESTful APIs</div>
+                        <div class="skill-badge">OData v4</div>
                         <div class="skill-badge">Swagger/OpenAPI</div>
-                        <div class="skill-badge">Elasticsearch</div>
-                        <div class="skill-badge">Apache HttpClient</div>
-                        <div class="skill-badge">Jackson</div>
+                        <div class="skill-badge">Middleware</div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3 class="category-title">Frontend & UI</h3>
                     <div class="skill-grid">
-                        <div class="skill-badge">JSP/JSTL</div>
+                        <div class="skill-badge">JSP</div>
                         <div class="skill-badge">JavaScript</div>
+                        <div class="skill-badge">TypeScript</div>
                         <div class="skill-badge">jQuery</div>
-                        <div class="skill-badge">Chart.js</div>
-                        <div class="skill-badge">CSS/LESS</div>
-                        <div class="skill-badge">Responsive Design</div>
+                        <div class="skill-badge">Angular</div>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3 class="category-title">Tools & DevOps</h3>
                     <div class="skill-grid">
-                        <div class="skill-badge">Gradle</div>
-                        <div class="skill-badge">Git/GitLab</div>
+                        <div class="skill-badge">Docker</div>
+                        <div class="skill-badge">Git/GitHub/GitLab</div>
                         <div class="skill-badge">IntelliJ IDEA</div>
-                        <div class="skill-badge">Spring Cloud Config</div>
-                        <div class="skill-badge">TestNG</div>
-                        <div class="skill-badge">REST Assured</div>
+                        <div class="skill-badge">Visual Studio</div>
+                        <div class="skill-badge">VSCode</div>
+                        <div class="skill-badge">Postman</div>
+                        <div class="skill-badge">SVN</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Other Technologies</h3>
+                    <div class="skill-grid">
+                        <div class="skill-badge">Pascal</div>
+                        <div class="skill-badge">C/C++</div>
+                        <div class="skill-badge">XML</div>
+                        <div class="skill-badge">JSON</div>
+                        <div class="skill-badge">Data Scraping</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Education & Training</h2>
+            </div>
+            <div class="education-container">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3>Bachelor of Computer Science and Engineering</h3>
+                        <p class="education-institution">Royal University of Phnom Penh</p>
+                        <span class="education-year">Graduated 2020</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">📚</div>
+                    <div class="education-content">
+                        <h3>HRD Training - Basic Course</h3>
+                        <p class="education-institution">April 2019 - August 2019 (816 hours)</p>
+                        <p class="education-details">
+                            JAVA: J2SE (Basic Java and OOP concepts), J2EE (Servlet and MVC pattern)<br>
+                            SPRING: Spring Boot, MyBatis Data Access, JPA & Hibernate
+                        </p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">💻</div>
+                    <div class="education-content">
+                        <h3>Training - C, C++, Java, C#, Database</h3>
+                        <p class="education-institution">ANT Training (2019)</p>
+                        <span class="education-year">Programming Fundamentals</span>
                     </div>
                 </div>
             </div>
@@ -492,8 +585,8 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">05</span>
-                <h2 class="section-title">Let's Connect</h2>
+                <span class="section-number">06</span>
+                <h2 class="section-title">Contact</h2>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -507,49 +600,32 @@
                             <div class="method-icon">📧</div>
                             <div>
                                 <h4>Email</h4>
-                                <p>Available upon request</p>
+                                <p>samoeunveth99@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-method">
-                            <div class="method-icon">💼</div>
+                            <div class="method-icon">📱</div>
                             <div>
-                                <h4>Availability</h4>
-                                <p>Open to new opportunities</p>
+                                <h4>Phone</h4>
+                                <p>+855 98543493</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Sen Sok, Phnom Penh</p>
                             </div>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="GitHub">
-                            <span>GitHub</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/sam-oeun-veth" class="social-link" aria-label="LinkedIn" target="_blank">
                             <span>LinkedIn</span>
                         </a>
-                        <a href="#" class="social-link" aria-label="Email">
+                        <a href="mailto:samoeunveth99@gmail.com" class="social-link" aria-label="Email">
                             <span>Email</span>
                         </a>
                     </div>
-                </div>
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -559,8 +635,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 VETH SamOeun. Crafted with passion for enterprise solutions.</p>
-                <p class="footer-tagline">Building scalable backend systems, one line of code at a time.</p>
+                <p>&copy; 2024 VETH SamOeun. Back-End Developer with 6+ Years Experience.</p>
+                <p class="footer-tagline">Building scalable backend systems and robust data scraping pipelines.</p>
             </div>
         </div>
     </footer>

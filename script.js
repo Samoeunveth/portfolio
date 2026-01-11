@@ -163,27 +163,6 @@ animatedElements.forEach(element => {
     elementObserver.observe(element);
 });
 
-// Form submission handler
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Here you would typically send the data to a server
-        console.log('Form submitted:', data);
-        
-        // Show success message (you can customize this)
-        alert('Thank you for your message! I\'ll get back to you soon.');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
 
 // Code typing animation for hero code block
 function typeCode() {

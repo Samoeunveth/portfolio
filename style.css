@@ -786,19 +786,6 @@ section {
     position: relative;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: 94px;
-    top: 0;
-    bottom: -32px;
-    width: 2px;
-    background: var(--border-color);
-}
-
-.timeline-item:last-child::before {
-    display: none;
-}
 
 .timeline-date {
     font-weight: 600;
@@ -1101,6 +1088,71 @@ section {
 }
 
 /* ============================================
+   Education Section
+   ============================================ */
+
+.education {
+    background: var(--bg-darker);
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+}
+
+.education-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.education-icon {
+    font-size: 48px;
+    flex-shrink: 0;
+}
+
+.education-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.education-institution {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.education-year {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--primary-color);
+    margin-top: 8px;
+}
+
+.education-details {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+/* ============================================
    Contact Section
    ============================================ */
 
@@ -1109,9 +1161,12 @@ section {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
+    text-align: center;
 }
 
 .contact-info h3 {
@@ -1128,15 +1183,20 @@ section {
 }
 
 .contact-methods {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
     margin-bottom: 48px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-method {
     display: flex;
     gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .method-icon {
@@ -1159,6 +1219,7 @@ section {
 .social-links {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .social-link {
